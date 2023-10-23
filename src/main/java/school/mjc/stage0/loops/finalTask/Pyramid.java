@@ -9,10 +9,14 @@ public class Pyramid {
 
                 if (cathetusLength - j <= i + 1 && j < cathetusLength) {
                     System.out.print(cathetusLength - j);
-                } else if (j >= cathetusLength && j - cathetusLength + 2 <= i + 1) {
-                        System.out.print(j - cathetusLength + 2);
-                } else {
-                       System.out.print(" ");
+                }
+
+                if (j >= cathetusLength && j - cathetusLength + 2 <= i + 1) {
+                    System.out.print(j - cathetusLength + 2);
+                }
+
+                if (j < cathetusLength && cathetusLength - j > i + 1) {
+                    System.out.print(" ");
                 }
 
             }
